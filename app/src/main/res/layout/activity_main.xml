@@ -14,56 +14,73 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        style="@style/Buttons"
-        android:onClick="onClickMediaStreamer"
-        android:text="@string/media_streamer"
-        android:id="@+id/media_streamer"
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        >
 
-    <Button
-        style="@style/Buttons"
-        android:onClick="onClickSuperDuo1"
-        android:text="@string/super_duo1"
-        android:id="@+id/super_duo1"
-        android:layout_below="@+id/media_streamer"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="7dp" />
-    <Button
-        style="@style/Buttons"
-        android:onClick="onClickSuperDuo2"
-        android:text="@string/super_duo2"
-        android:id="@+id/super_duo2"
-        android:layout_below="@+id/super_duo1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="7dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            >
 
-    <Button
-        style="@style/Buttons"
-        android:onClick="onClickBigger"
-        android:text="@string/bigger"
-        android:id="@+id/bigger"
-        android:layout_below="@+id/super_duo2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="7dp" />
+            <Button
+                style="@style/Buttons"
+                android:onClick="onClickMediaStreamer"
+                android:text="@string/media_streamer"
+                android:id="@+id/media_streamer"
+                android:layout_below="@+id/textView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                />
 
-    <Button
-        style="@style/Buttons"
-        android:onClick="onClickReader"
-        android:text="@string/reader"
-        android:id="@+id/reader"
-        android:layout_below="@+id/bigger"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="7dp" />
+            <Button
+                style="@style/Buttons"
+                android:onClick="onClickSuperDuo1"
+                android:text="@string/super_duo1"
+                android:id="@+id/super_duo1"
+                android:layout_below="@+id/media_streamer"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" />
+            <Button
+                style="@style/Buttons"
+                android:onClick="onClickSuperDuo2"
+                android:text="@string/super_duo2"
+                android:id="@+id/super_duo2"
+                android:layout_below="@+id/super_duo1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" />
 
-    <Button
-        style="@style/Buttons.Capstone"
-        android:onClick="onClickCapstone"
-        android:text="@string/capstone"
-        android:id="@+id/capstone"
-        android:layout_below="@+id/reader"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="7dp" />
+            <Button
+                style="@style/Buttons"
+                android:onClick="onClickBigger"
+                android:text="@string/bigger"
+                android:id="@+id/bigger"
+                android:layout_below="@+id/super_duo2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" />
+
+            <Button
+                style="@style/Buttons"
+                android:onClick="onClickReader"
+                android:text="@string/reader"
+                android:id="@+id/reader"
+                android:layout_below="@+id/bigger"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" />
+
+            <Button
+                style="@style/Buttons.Capstone"
+                android:onClick="onClickCapstone"
+                android:text="@string/capstone"
+                android:id="@+id/capstone"
+                android:layout_below="@+id/reader"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
